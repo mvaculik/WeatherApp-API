@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!-- NOO! DON'T LOOK HERE! IT'S SECRET! -->
+<!--
+__        __     ______              _    _ _____
+\ \      / /\   |  __  |   /\       | |  | |_  __|
+ \ \    / /  \  | |  |_|  /  \      | |__| | | |
+  \ \  / / /\ \ | |   _  / /\ \     |  __  | | |
+   \ \/ / ____ \| |__| |/ ____ \    | |  | |_| |_
+    \__/_/    \_\______|_/    \_\(_)|_|  |_|_____|
+-->
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  <!--<meta http-equiv="Refresh" content="300">-->
+    <!--css-->
+  <link rel="stylesheet" href="style.css" />
+    <!--add-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7a47a52c8b.js" crossorigin="anonymous"></script>
+
+  <title>Weather App</title>
+</head>
+<body>
+    <div class="darkLight">
+        <input type="checkbox" class="checkbox" id="checkbox" onclick="myFunction()">
+        <label for="checkbox" class="switch">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+            <i class="ball" id="ball"></i>
+        </label>
+    </div>
+  
+    <main id="main">
+        <div class="TopRow">
+            <div id="time">12:00</div>
+            <div class="wt">
+                <div id="descrip">Sunny</div>
+                <img class="column-w" id="img" src="./icons/Clear.png" alt="weather-icon">
+                <div class="column-w" id="temp">1°C</div>
+            </div>
+
+            <div class="MidRow">
+                
+    
+                <section class="location">
+                <span id="city" class="city">Prague</span>
+                <span id="country">cz</span>
+                </section>
+            </div>
+
+        </div>
+
+        <div class="BotRow" id="BotRow">
+            <div class="container">
+                <div class="column-t" id="day">Monday</div>
+                <div class="column-t" id="date">7 March 2021</div>
+            </div>
+            <div class="maxMin">
+                <div id="max">2°C max</div>
+                <div id="min">0°C min</div>
+            </div>
+        </div>
+
+        <div class="DeepRow">
+            <input type="text" autocomplete="off" id="search-box" placeholder="Search for a city..." />
+
+        </div>
+    </main>
+
+  <!--Scripts-->
+  <script src="main.js"></script>
+  <script src="mode.js"></script>
+
+</body>
+</html>

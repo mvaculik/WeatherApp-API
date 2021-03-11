@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Roboto", sans-serif;
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+
+    overflow: hidden;
+  }
+
+  .darkLight {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;;
+
+  }
+ 
+  .checkbox {
+    opacity: 0;
+    position: absolute;
+  }
+  /* we used js
+  .checkbox:checked + .switch .ball {
+      transform: translateX(24px);
+  }
+  */
+  .switch {
+      background-color: #000;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-radius: 50px;
+      padding: 5px;
+      height: 26px;
+      width: 50px;
+      position: relative;
+  }
+  .ball {
+      height: 22px;
+      background-color: #ffffff;
+      border-radius: 50%;
+      width: 22px;
+      position: absolute;
+      top: 2px;
+      left: 2px;
+      transition: transform .2s linear;
+  }
+  .fa-moon {
+      color: #f1c40f;
+  }
+  .fa-sun {
+      color: #f39c12;
+  }
+  main {
+      background-image: url('phone_light.png');
+      background-size: cover;
+      background-position: top center;
+        width: 25rem;
+        height: 50rem;
+
+      text-align: -moz-center;
+      text-align: -webkit-center;
+
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      flex-direction: column;
+
+      padding: 25px 25px 50px;
+      margin-top: 5rem;
+  }
+  .TopRow {
+      width: 100%;
+  }
+  .wt {
+      padding: 4rem 3.4rem;
+  }
+  .wt:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  #time {
+    position: relative;
+    top: 6px;
+    float: left;
+    right: -34px;
+    font-family: inherit;
+    font-size: 14px;
+  }
+    .column-w {
+        float: left;
+        width: 50%;
+    }
+        #img {
+            width: 6rem;
+        }
+        #temp {
+            font-family: "Roboto", sans-serif;
+            font-size: 3.0rem;
+            margin-top: 1.5rem;
+            margin-left: 0.5rem;
+        }
+
+  .MidRow {
+      margin-top: -2rem;
+      height: 4rem;
+  }
+    #descrip {
+        top: -1rem;
+        position: relative;
+        font-size: 1.5rem;
+        letter-spacing: 0.1rem;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    }
+    #city {
+        font-size: 2rem;
+        letter-spacing: 0.1rem;
+
+    }
+
+  .BotRow {
+      height: 4.2rem;
+      margin-left: 1rem;
+      margin-right: 0.8rem;
+  }
+  #BotRow{
+    border-top: 0.5px solid #747474;
+    border-bottom: 0.5px solid #747474;
+  }
+  .BotRow:after{
+    content: "";
+    display: table;
+    clear: both; 
+  }
+  .container {
+    float: left;
+    width: 50%;
+
+    padding: 0.5rem 1.4rem;
+  }
+    .column-t {
+        float: left;
+    }
+        #day {
+            font-size: 1.5rem;
+            letter-spacing: 0.1rem;
+
+        }
+        #date {
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 1rem;
+            letter-spacing: 0.1rem;
+            width: 120px;
+
+        }
+    .maxMin {
+        padding: 0.85rem 0rem;
+        margin-right: -5rem;
+    }
+        #heigh {
+            font-size: 1.5rem;
+
+        }
+        #low {
+            font-size: 1rem;
+
+        }
+
+    #search-box {
+        position: relative;
+        top: 20rem;
+        width: 100%;
+        max-width: 18rem;
+        padding: 0.5rem 1rem;
+        border: none;
+        outline: none;
+        border-radius: 16px 16px 16px 16px;
+        background: rgba(0, 0, 0, 0.178);
+        
+        font-family: Arial, Helvetica, sans-serif;
+        color: #000;
+        font-size: 1rem;
+        letter-spacing: 1px;
+        font-weight: 300;
+        transition: 0.2s ease-out;
+    }
