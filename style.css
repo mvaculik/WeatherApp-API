@@ -154,9 +154,6 @@
 
     padding: 0.5rem 1.4rem;
   }
-    .column-t {
-        float: left;
-    }
         #day {
             font-size: 1.5rem;
             letter-spacing: 0.1rem;
@@ -164,7 +161,7 @@
         }
         #date {
             font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            font-size: 1rem;
+            font-size: 13px;
             letter-spacing: 0.1rem;
             width: 120px;
 
